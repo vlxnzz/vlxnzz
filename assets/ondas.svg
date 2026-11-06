@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 110" width="1280" height="110" role="presentation">
+<defs>
+  <linearGradient id="o1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4c1d95"/><stop offset="0.5" stop-color="#6d28d9"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+  <clipPath id="cartao"><rect width="1280" height="110" rx="22"/></clipPath>
+</defs>
+<style>
+  @keyframes onda { 0% { transform: translateX(0) } 100% { transform: translateX(-640px) } }
+  .a { animation: onda 18s linear infinite } .b { animation: onda 11s linear infinite } .c { animation: onda 7s linear infinite reverse }
+</style>
+<g clip-path="url(#cartao)">
+  <rect width="1280" height="110" fill="#0a0a0f"/>
+  <g class="a" opacity="0.35"><path d="M0 46 Q160 6 320 46 T640 46 T960 46 T1280 46 T1600 46 T1920 46 V110 H0 Z" fill="url(#o1)"/></g>
+  <g class="b" opacity="0.65"><path d="M0 62 Q160 26 320 62 T640 62 T960 62 T1280 62 T1600 62 T1920 62 V110 H0 Z" fill="url(#o1)"/></g>
+  <g class="c" opacity="0.95"><path d="M0 80 Q160 48 320 80 T640 80 T960 80 T1280 80 T1600 80 T1920 80 V110 H0 Z" fill="url(#o1)"/></g>
+</g>
+</svg>

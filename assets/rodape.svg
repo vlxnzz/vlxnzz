@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 140" width="1280" height="140" role="presentation">
-<defs><linearGradient id="o1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4c1d95"/><stop offset="0.5" stop-color="#6d28d9"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
-<style>@keyframes onda { 0% { transform: translateX(0) } 100% { transform: translateX(-640px) } } .o { animation: onda 14s linear infinite } .o2 { animation: onda 22s linear infinite reverse }
-.t { font-family: 'Segoe UI','Helvetica Neue',Arial,sans-serif }</style>
-<clipPath id="cr"><rect width="1280" height="140" rx="22"/></clipPath><g clip-path="url(#cr)"><rect width="1280" height="140" fill="#0a0a0f"/>
-<g class="o2" opacity="0.45"><path d="M0 70 Q160 30 320 70 T640 70 T960 70 T1280 70 T1600 70 T1920 70 V140 H0 Z" fill="url(#o1)"/></g>
-<g class="o" opacity="0.9"><path d="M0 92 Q160 56 320 92 T640 92 T960 92 T1280 92 T1600 92 T1920 92 V140 H0 Z" fill="url(#o1)"/></g>
-<text class="t" x="640" y="40" text-anchor="middle" font-size="18" fill="#b4a8d8">feito no escuro, com muito café e um pouco de energia fantasma</text></g>
-</svg>
