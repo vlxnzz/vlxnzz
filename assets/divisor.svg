@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 28" width="1200" height="28" role="presentation">
+<defs><linearGradient id="l" x1="0" x2="1"><stop offset="0" stop-color="#8b5cf6" stop-opacity="0"/><stop offset="0.5" stop-color="#a78bfa"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></linearGradient>
+<filter id="g"><feGaussianBlur stdDeviation="3"/></filter></defs>
+<style>@keyframes viaja { 0% { transform: translateX(-380px) } 100% { transform: translateX(380px) } } .pt { animation: viaja 5s ease-in-out infinite alternate }
+@keyframes pulsa { 0%,100% { opacity:1 } 50% { opacity:.4 } } .di { animation: pulsa 2.4s ease-in-out infinite }</style>
+<rect x="60" y="13" width="1080" height="2" fill="url(#l)"/>
+<g class="pt"><circle cx="600" cy="14" r="7" fill="#8b5cf6" filter="url(#g)"/><circle cx="600" cy="14" r="2.6" fill="#fff"/></g>
+<g class="di" transform="translate(600 14) rotate(45)"><rect x="-5" y="-5" width="10" height="10" fill="#0a0a0f" stroke="#a78bfa" stroke-width="1.6"/></g>
+</svg>

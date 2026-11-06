@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 305" width="300" height="305" role="img" aria-label="Gengar">
+<style>
+  @keyframes g_flutua { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-12px) } }
+  @keyframes g_pisca { 0%,92%,100% { transform: scaleY(1) } 95% { transform: scaleY(0.1) } }
+  @keyframes g_sombra { 0%,100% { transform: scaleX(1); opacity:.45 } 50% { transform: scaleX(.85); opacity:.3 } }
+  .g_flutua { animation: g_flutua 3.6s ease-in-out infinite }
+  .g_pisca { animation: g_pisca 5s infinite; transform-box: fill-box; transform-origin: center }
+  .g_sombra { animation: g_sombra 3.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center }</style>
+  <defs>
+    <radialGradient id="g_body" cx="50%" cy="38%" r="70%"><stop offset="0" stop-color="#8f67cf"/><stop offset="0.6" stop-color="#6a45a8"/><stop offset="1" stop-color="#3e2570"/></radialGradient>
+    <linearGradient id="g_spike" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a54ba"/><stop offset="1" stop-color="#4b2d85"/></linearGradient>
+    <radialGradient id="g_eye" cx="50%" cy="50%" r="60%"><stop offset="0" stop-color="#ff8aa0"/><stop offset="1" stop-color="#e11d48"/></radialGradient>
+    <filter id="g_glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <ellipse class="g_sombra" cx="150" cy="292" rx="92" ry="9" fill="#000" opacity="0.45"/>
+  <g class="g_flutua">
+    <!-- espinhos laterais -->
+    <polygon points="52,150 12,128 46,184" fill="url(#g_spike)"/><polygon points="49,198 8,190 52,232" fill="url(#g_spike)"/>
+    <polygon points="248,150 288,128 254,184" fill="url(#g_spike)"/><polygon points="251,198 292,190 248,232" fill="url(#g_spike)"/>
+    <!-- orelhas -->
+    <polygon points="86,92 56,12 132,70" fill="url(#g_spike)"/><polygon points="214,92 244,12 168,70" fill="url(#g_spike)"/>
+    <polygon points="112,74 100,36 140,66" fill="url(#g_spike)" opacity="0.85"/><polygon points="188,74 200,36 160,66" fill="url(#g_spike)" opacity="0.85"/>
+    <!-- corpo -->
+    <path d="M150 60 C 94 60, 50 104, 47 166 C 44 228, 82 270, 150 270 C 218 270, 256 228, 253 166 C 250 104, 206 60, 150 60 Z" fill="url(#g_body)"/>
+    <path d="M150 60 C 94 60, 50 104, 47 166" fill="none" stroke="#fff" stroke-opacity="0.12" stroke-width="3" stroke-linecap="round"/>
+    <!-- braços e pés -->
+    <ellipse cx="50" cy="232" rx="22" ry="15" transform="rotate(-20 50 232)" fill="#4b2d85"/><ellipse cx="250" cy="232" rx="22" ry="15" transform="rotate(20 250 232)" fill="#4b2d85"/>
+    <ellipse cx="112" cy="272" rx="32" ry="14" fill="#3e2570"/><ellipse cx="188" cy="272" rx="32" ry="14" fill="#3e2570"/>
+    <!-- olhos -->
+    <g class="g_pisca" filter="url(#g_glow)">
+      <g transform="rotate(-18 106 138)"><ellipse cx="106" cy="138" rx="27" ry="14" fill="url(#g_eye)" stroke="#7a0f2e" stroke-width="2"/><ellipse cx="108" cy="138" rx="3.2" ry="10" fill="#fff"/></g>
+      <g transform="rotate(18 194 138)"><ellipse cx="194" cy="138" rx="27" ry="14" fill="url(#g_eye)" stroke="#7a0f2e" stroke-width="2"/><ellipse cx="192" cy="138" rx="3.2" ry="10" fill="#fff"/></g>
+    </g>
+    <!-- boca -->
+    <path d="M80 172 Q 150 262 220 172 Q 150 198 80 172 Z" fill="#1a0b2e"/>
+    <ellipse cx="150" cy="212" rx="30" ry="9" fill="#e0487a"/>
+    <polygon points="80.0,172.0 95.6,177.1 87.8,191.7" fill="#fff"/><polygon points="95.6,177.1 111.1,181.0 103.3,196.2" fill="#fff"/><polygon points="111.1,181.0 126.7,183.6 118.9,199.4" fill="#fff"/><polygon points="126.7,183.6 142.2,184.8 134.4,201.4" fill="#fff"/><polygon points="142.2,184.8 157.8,184.8 150.0,202.0" fill="#fff"/><polygon points="157.8,184.8 173.3,183.6 165.6,201.4" fill="#fff"/><polygon points="173.3,183.6 188.9,181.0 181.1,199.4" fill="#fff"/><polygon points="188.9,181.0 204.4,177.1 196.7,196.2" fill="#fff"/><polygon points="204.4,177.1 220.0,172.0 212.2,191.7" fill="#fff"/>
+  </g></svg>
